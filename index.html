@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        The tieu de trong HTML: gom 6 the tu h1, h2, h3, h4, h5, h6
+     -->
+     <!-- 
+         Cac cach ngat dong:
+         -hr: Tao dong ke ngat dong
+         -br: Ngat dong 
+      -->   
+      <!-- 
+          Cac dinh kieu trong html
+            -strong: van ban quan trong
+            -b: van ban in dam
+            -em: van ban duoc nhan manh
+            -i: van ban in nghieng
+            -mark: van ban duoc danh dau
+            -small: van ban nho hon
+            -del: van ban duoc xoa
+            -ins: van ban duoc chen
+            -sub: tao chi so duoi
+            -sup: tao chi so tren
+       -->
+       <!-- 
+           Trich dan trong html
+           -blockquote: van ban duoc trich dan lui dau dong
+           -q: van ban duoc trich dan dat trong dau ngoac kep ""
+           -address: trich dan dia chi, ten tac gia, ... 
+           -abbr: viet tat ten mot to chuc hay mot cai gi do
+           -cite: Neu ten mot tac pham
+           -bdo: Ghi de van ban theo chieu nao do voi thuoc tinh dir: rtl, ltr
+        -->
+        <!-- 
+            Mau sac trong html:
+            -RGB(do, luc, xanh lam): moi tham so (do, luc, lam) la cuong do cua mau co gia tri nguyen 
+                tu 0 den 255
+            -RGBA(do, luc, lam, anpha): them tham so anpha xac dinh do mo cho mot mau co gia tri tu 0->1
+            -HEX: su dung mau o dang thap luc phan : #rrggbb
+                Trong do: +rr la do, gg la luc, bb la xanh lam co gia tri thap luc phan tu 00->ff
+         -->
+         <!-- 
+             Lien ket trong html:
+             -The a: Dung de dan link den mot trang web khac voi thuoc tinh href:   
+                    Thuoc tinh _target: xac dinh noi mo trang web moi
+                        _self: Mac dinh. Mo cua so tai cua so hien hanh
+                        _blank: Mo cua so moi o mot tab moi
+                        _parent: Mo cua so trong khung hinh chinh
+                        _top: Mo trong toan bo phan than cua so 
+          -->
+          <!-- 
+              Mau lien ket thay doi khi ta thuc hien hanh dong:
+                -link: mac dinh
+                -hover: khi dua chuot qua link
+                -visited: Khi ta da thuc hien click chuot thi lien ket se thay doi 
+                -active: Khi ta thuc hien click chuot vao lien ket
+           -->
+           <!-- 
+               Hinh anh trong html:
+                -De them hinh anh su dung the img voi thuoc tinh src: path, va alt: ten thay the cho anh
+            -->
+            <!-- 
+                Bang trong html:
+                    -su dung the table voi cac the con tr, th, td
+                    -them vien cho the su dung thuoc tinh border
+                    -Thuoc tinh border-collapse: collapse, separate, inherit
+                        collapse: Khoang trong giua cac duong vien duoc xoa bo
+                        separate: day la gia tri mac dinh cua bang
+                        inherit: xac dinh thua huong thuoc tinh tu thanh phan cha
+                    -De gop nhieu cot ta dung thuoc tinh colspan voi gia tri la so cot can gop
+                    -De gop nhieu hang ta dung thuoc tinh rowspan voi gia tri la so hang can gop
+             -->
+             <!-- 
+                 Danh sach trong html
+                 -Danh sach khong thu tu:
+                    +Su dung cap the ul,li de tao danh sach khong thu tu
+                    +Thuoc tinh list-style-type de xac dinh kieu cua diem danh dau: circle, square, none
+                        disc   
+                -Danh sach co thu tu
+                    +Su dung cap the ol,li de tao danh sach co thu tu
+                    +Thuoc tinh type de xac dinh loai thu tu danh dau: i, I, a, A, 1, 
+                -Danh sach khac
+                    +Su dung the dl de tao danh sach voi cac the mo ta dt, dd
+                        dt: Phan tu html xac dinh thuat ngu mo ta   
+                        dd: mo ta thuat ngu duoc mo ta trong the dt
+              -->
+              <!-- 
+                  Bo cuc cua mot trang html
+                  -the header: xac dinh tieu de cho mot tai lieu hoac mot phan
+                  -the nav: Xac dinh mot tap hop cac lien ket dieu huong
+                  -the section: Xac dinh mot phan trong tai lieu
+                  -the article: Xac dinh noi dung doc lap
+                  -the footer: Xac dinh chan trang cho mot tai lieu hoac cho mot phan 
+                  -the aside: Xac dinh noi dung ngoai noi dung
+               -->
+               <!-- 
+                   Bieu mau form trong html gom cac phan tu: input, select, label, textarea, button, 
+                   fieldset, legend, datalist, output, option, iptgroup
+                    *Phan tu input:
+                        -Thuoc tinh: type: text, password, radio, checkbox, file, month, search, url...
+                                            color: lua chon mau 
+                                            date: lua chon ngay thang. Co the them thuoc tinh max, min
+                                                    de gioi han ngay
+                                            datetime-local: co the lua chon gio
+                                            email: Linh vuc dau vao la mot email
+                                            number: Nhap mot truong so. Co the them thuoc tinh min, max
+                                                    de xac dinh khoang, thuoc tinh step de xac dinh
+                                                    buoc nhay, value de xac dinh gia tri ban dau
+                                            tel: su dung khi dau vao la mot so dien thoai
+                                     name, size, maxlength, value, readonly, disabled,
+                                    required(Xac dinh phan tu bat buoc phai nhap du lieu)
+                                    autocomplete(on/off xac dinh phan tu co tu hoan thanh khong)
+                    *Phan tu label: Xac dinh nhan cho mot so phan tu bieu mau
+                        -Thuoc tinh: for co gia tri trung voi id cua cac phan tu input de rang buoc chung
+                        lai thuan loi khi ta click vao van ban thuoc phan tu label thi no se chuyen sang
+                        nut radio hoac lua chon
+                    *Phan tu select: Xac dinh danh sach tha xuong, de xac dinh mot tuy chon cho truoc
+                    thi them thuoc tinh selected
+                        -Thuoc tinh: size chi dinh so lua chon hien thi
+                                     multiple cho phep chon duoc nhieu gia tri
+                    *Phan tu textarea: Xac dinh truong nhap du lieu. VD: Ghi chu, ...
+                        -Thuoc tinh: rows, cols xac dinh so dong, so cot trong vung van ban
+                    *Phan tu button: xac dinh mot nut co the bam
+                        -Thuoc tinh: type: button, submit, reset, menu
+                    *Phan tu fieldset va legend: fieldset nhom du lieu lien quan trong bieu mau,
+                                                 legend xac dinh chu thich cho phan tu fieldset
+                    *Phan tu datalist: danh sach duoc xac dinh truoc cua phat tu input, thuoc tinh list
+                                        cua phan tu input phai giong voi thuoc tinh id cua datalist
+                    *Phan tu output: Dai dien cho ket qua mot phep tinh
+                -->
+</body>
+</html>
