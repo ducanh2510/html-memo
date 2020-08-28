@@ -1,0 +1,63 @@
+*Background:
+    -background-image: url()
+    -background-attachment: fixed nền được cố định với khung hình
+                            scroll nền cuộn theo thành phần
+                            local giống scroll
+                            inherit kế thừa từ thành phần cha
+                            initial thiết lập thuộc tính về giá trị mặc định
+*Border:
+    -border-style: dotted xác định một đường viền chấm 
+                    dashed xác định một đường viền đứt nét 
+                    solid xác định một đường viền chắc chắn
+                    double đường viền kép 
+                    none không có đường viền 
+                    hidden ẩn đường viền 
+    -border-width: xác định độ rộng đường viền 
+    -border-color: xác định màu cho đường viền
+    -border-radius: thêm khung viền tròn cho đường viền 
+*Outline: là một đường viền vẽ xung quanh các phần tử , bên ngoài border để làm cho phần tử nổi bật 
+    -outline-style: tương tự với border
+    -outline-color: tương tự với border
+    -outline-width: tương tự với border
+    -outline-offset: tạo thêm khoảng trống giữa phần border và khoảng trống là trong suốt 
+*Text: 
+    -color, text-align, line-height
+    -vetical-align: thiết lập sự liên kết dọc của một phần tử  với các giá trị top, bottom, left, right
+        VD: Trình bày căn chỉnh theo chiều dọc hình ảnh trong văn bản 
+    -text-decoration, text-transform    
+    -text-indent: xác định thụt dòng đầu tiên của một đối tượng văn bản 
+    -letter-spacing: xác định khoảng cách giữa các kí tự trong văn bản 
+    -word-spacing: xác định khoảng cách giữa các từ trong văn bản 
+    -white-space: nowrap văn bản hiển thị trên một dòng chỉ xuống dòng khi gặp thẻ <br>
+                  pre văn bản sẽ hiển thị trên cùng một hàng, chỉ ngắt dòng tại đoạn văn bản sử dụng thẻ <pre>.
+    -text-shadow: thuộc tính thêm bóng cho văn bản với các giá trị bóng ngang(bn), bóng dọc(bd), đọ nhòe
+                    , màu bóng 
+                    VD: text-shadow: 2px 2px 5px red;
+*Font:
+    -font-family: xác định font vd: "Times New Roman", sans-serif, ...
+    -font-style: xác định kiểu như bình thường, nghiêng : normal, italic
+    -font-weight: xác định kiểu bình thường, in đậm: normal, bold, ...
+    -font-variant: văn bản sẽ in hoa nhưng cỡ chữ nhỏ hơn chuẩn
+    -font-size: Thiết lập cỡ chữ 
+    -@font-face: url đường dẫn đến font
+                 font-family: đặt tên cho Font
+*Danh sách:
+    -list-style-position: xác định vị trí của chỉ mục đầu dòng
+                    outside, external: chỉ mục nằm ngoài mục danh sách(Đây là mặc định)
+                    inside: chỉ mục nằm trong mục danh sách
+    -list-style-type: none loại bỏ chỉ mục
+    -list-style-image: Dùng hình ảnh để làm chỉ mục
+*Table: 
+    -width, height, border-collapse, text-align, vertical-align 
+    -tr:nth child("value") xác định thuộc tính bảng sọc với value nhận giá trị odd, even 
+    -Thêm một vùng chứa bên ngoài table với thuộc tính overflow-x:auto để có thanh cuộn khi độ rộng màn
+        hình thay đổi 
+*Display: inline, block, inline-block, flex
+*Overflow: 
+    -visible phần tràn sẽ không được cắt bớt, hiển thị nội dung bên ngoài hộp
+    -hidden Phần tràn bị cắt bớt và không hiển thị phần còn lại
+    -scroll Phần tràn được cắt bớt và hiển thị thanh cuộn để xem phần còn lại
+    -auto Tương tự scroll nhưng chỉ hiện thi thanh cuộn khi cần thiết 
+
+
+
